@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,15 +11,125 @@
     <include
         layout="@layout/custom_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/include" />
 
-    <TextView
+    <TextView android:id="@+id/head1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Serlingampalli, Hyderabad"
+        android:paddingTop="20px"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView android:id="@+id/head10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#9825;"
+        android:textSize="20sp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/include"
+        android:layout_toStartOf="@+id/head11" />
+
+    <TextView android:id="@+id/head11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#128269;"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/head1"
+        android:layout_alignEnd="@+id/head4"
+        android:layout_marginEnd="12dp" />
+
+    <TextView android:id="@+id/head2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Update: 3pm, IST"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/head1"/>
+
+    <TextView android:id="@+id/head3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yesterday"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/head2"/>
+
+    <ImageView
+        android:id="@+id/head4"
+        android:layout_width="wrap_content"
+        android:layout_height="150sp"
+        android:layout_below="@+id/head3"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/clouds" />
+
+    <TextView android:id="@+id/head5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cloudy"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/head4"/>
+
+    <TextView
+        android:id="@+id/head6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head5"
+        android:layout_centerHorizontal="true"
+        android:text="@string/_23"
+        android:textSize="90sp" />
+
+    <TextView android:id="@+id/head7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_20"
+        android:paddingRight="25dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/head6"
+        android:layout_alignEnd="@+id/head5" />
+
+    <TextView android:id="@+id/head8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_43"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/head7"
+        android:layout_alignBottom="@+id/head7"
+        android:layout_alignEnd="@+id/head2"
+        android:layout_marginEnd="26dp" />
+
+
+    <TextView
+        android:id="@+id/head9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head8"
+        android:layout_centerHorizontal="true"
+        android:lineSpacingExtra="8sp"
+        android:layout_marginTop="8dp"
+        android:text="Enjoy the Clouds, await for splashes.." />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/head9"
+        android:layout_marginTop="14dp"
+        android:background="#CD5C5C"
+        android:text="@string/forecast1"
+        android:textSize="24sp"
+        android:id="@+id/button"/>
+
+    <TextView
+        android:id="@+id/infoTxtCredits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="@string/add_as_favourite1"
+        android:textAlignment="center"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="15dp" />
+
+
+</RelativeLayout>

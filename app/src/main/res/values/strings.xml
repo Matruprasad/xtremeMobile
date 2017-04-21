@@ -17,6 +17,11 @@
     <string name="cloudy">cloudy</string>
     <string name="_23c">23C</string>
     <string name="weather_image">weather image</string>
-    <string name="add_as_favourite"> <u>Add as favourite</u></string>
+    <string name="add_as_favourite"> <a href="http://www.google.com"> Add as favourite</a></string>
+    <string name="_23">23\u2103</string>
+    <string name="_20">20&#x2191;</string>
+    <string name="_43">43&#x2193;</string>
+    <string name="forecast1">\u2602    Forecast</string>
+    <string name="add_as_favourite1"><u>Add as Favourite</u></string>
 
 </resources>
